@@ -54,7 +54,7 @@ li {
     transition-timing-function: ease-in;
 }
 
-.main .nav .nav-content li {
+.main .nav .nav-content li:not(:last-child) {
     padding: 0 10px 5px 10px;
 }
 
@@ -201,6 +201,12 @@ footer {
     }
 }
 
+@media only screen and (min-width: 800px) {
+    .nav .logo {
+        padding-left: 10px;
+    }
+}
+
 @media only screen and (max-width: 1023px) {
     .main .nav {
         /*Because of mobile nav*/
@@ -210,7 +216,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
     .nav-content li:not(:last-child) {
         display: none;
     }
